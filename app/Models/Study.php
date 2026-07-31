@@ -18,6 +18,7 @@ class Study extends Model
         'technician_name',
         'status',
         'image_path',
+        'report', // <-- Permitir guardado masivo
         'deletion_reason',
     ];
 
