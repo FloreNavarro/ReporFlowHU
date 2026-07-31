@@ -21,6 +21,7 @@ return new class extends Migration
         $table->string('status')->default('Nuevo'); // Estado (Nuevo, En revisión, etc.)
         $table->string('image_path')->nullable(); // Ruta de la imagen subida
         $table->text('deletion_reason')->nullable(); // Para el modal de razón de eliminación
+        $table->text('report')->nullable(); // <-- CAMPO PARA EL INFORME MÉDICO
         $table->softDeletes(); // Requerido para la Papelera de reciclaje
         $table->timestamps();
         });
