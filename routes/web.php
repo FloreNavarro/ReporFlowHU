@@ -4,6 +4,7 @@
 
 use App\Http\Controllers\StudyController;
 use App\Http\Controllers\tecnicoController;
+use App\Http\Controllers\RrhhController;
 use Illuminate\Support\Facades\Route;
 
 // Rutas del Médico
@@ -17,7 +18,7 @@ Route::get('/', [TecnicoController::class, 'index'])->name('index');
 Route::post('/store', [TecnicoController::class, 'store'])->name('store'); 
 });
 
-use App\Http\Controllers\RrhhController;
+
 
 // Rutas de Recursos Humanos
 Route::prefix('rrhh')->name('rrhh.')->group(function () {
