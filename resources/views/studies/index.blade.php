@@ -26,7 +26,6 @@
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white border-end min-vh-100">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 text-dark">
                 <h3 class="fw-bold my-3 text-primary">Hospital<br><small class="text-secondary fs-6">Universitario</small></h3>
-<<<<<<< HEAD
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
                     <li class="nav-item w-100 mb-2">
                         <a href="#" class="nav-link active bg-warning text-dark fw-bold">
@@ -46,27 +45,6 @@
                     <li class="nav-item w-100 mb-2">
                         <a href="#" class="nav-link text-dark">
                             <i class="bi bi-trash"></i> Papelera
-=======
-                
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100">
-                    <li class="nav-item w-100 mb-2">
-                        <a href="#" class="nav-link active bg-warning text-dark fw-bold">
-                            Worklist (Pendientes)
-                        </a>
-                    </li>
-                    <li class="nav-item w-100 mb-2">
-                        <a href="#" class="nav-link text-dark">Mis Informes</a>
-                    </li>
-                    <li class="nav-item w-100 mb-2">
-                        <a href="#" class="nav-link text-dark">Mi Rendimiento</a>
-                    </li>
-                    <li class="nav-item w-100 mb-2">
-                        <a href="#" class="nav-link text-dark">Papelera</a>
-                    </li>
-                    <li class="nav-item w-100 mt-4">
-                        <a href="{{ route('tecnico.index') }}" class="nav-link text-primary border border-primary text-center rounded">
-                            Portal Técnico
->>>>>>> feature/tecnico
                         </a>
                     </li>
                 </ul>
