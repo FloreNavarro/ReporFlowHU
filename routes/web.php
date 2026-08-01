@@ -21,14 +21,14 @@ Route::post('/store', [TecnicoController::class, 'store'])->name('store');
 
 
 // Rutas de Recursos Humanos
-use App\Http\Controllers\RrhhController;
+
 
 Route::prefix('rrhh')->name('rrhh.')->group(function () {
     // 1. Vista general de secciones / especialidades
     Route::get('/', [RrhhController::class, 'index'])->name('index');
 
     // 2. Vista de médicos por especialidad (ej: /rrhh/especialidad/Cardiologia)
-    Route::get('/especialidad/{specialty}', [RrhhController::class, 'specialty'])->name('specialty');
+    Route::get('/especialidad/{specialty}', [RrhhController::class, 'especialidad'])->name('especialidad');
 
     // 3. Vista de informes realizados por un médico específico
     Route::get('/medico/{id}', [RrhhController::class, 'doctorDetail'])->name('doctor.detail');

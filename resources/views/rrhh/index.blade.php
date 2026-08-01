@@ -65,7 +65,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
                                 <h6 class="text-muted fw-bold mb-1">Total Personal</h6>
-                                <h3 class="fw-bold mb-0">{{ count($employees) }}</h3>
+                               <h3 class="fw-bold mb-0">{{ count($employees ?? []) }}</h3>
                             </div>
                             <i class="bi bi-people fs-1 text-primary"></i>
                         </div>
@@ -94,7 +94,20 @@
                     </div>
                 </div>
             </div>
-
+              <!-- Contenedor de Tarjetas -->
+<div class="row g-4 mb-4">
+    @foreach($specialties as $specialty)
+        <div class="col-md-6">
+            <a href="{{ route('rrhh.especialidad', $specialty) }}" class="text-decoration-none">
+                <div class="card shadow-sm border-0 rounded-3 text-center p-5 hover-card bg-white">
+                    <h2 class="fw-bold text-dark m-0 tracking-wide">
+                        {{ strtoupper($specialty) }}
+                    </h2>
+                </div>
+            </a>
+        </div>
+    @endforeach
+</div>
             <!-- Encabezado y Botón Registrar Empleado -->
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h4 class="fw-bold text-secondary">Nómina de Personal</h4>
