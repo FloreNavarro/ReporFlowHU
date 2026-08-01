@@ -2,37 +2,46 @@
 
 namespace App\Http\Controllers;
 
+namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Study; // O tu modelo de estudios/informes
 
-class rrhhController extends Controller
+class RrhhController extends Controller
 {
+    // Vista 1: Tarjetas de Especialidades
     public function index()
     {
-        // Obtener todo el personal registrado
-        $employees = User::latest()->get();
-
-        return view('rrhh.index', compact('employees'));
+        // Secciones disponibles
+        $specialties = ['Cardiología', 'Neumonología'];
+        
+        return view('rrhh.index', compact('specialties'));
     }
 
-    public function store(Request $request)
+    // Vista 2: Tabla de Médicos de la Especialidad seleccionada
+    public function specialty($specialty)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
-            'role' => 'required|string',
-            'dni' => 'required|string|max:20',
-        ]);
+        // Médicos que pertenecen a esta especialidad
+        $doctors = User::where('role', 'Médico')
+                       ->where('specialty', $specialty)
+                       ->withCount('studies') // Cuenta la cantidad de informes realizados
+                       ->get();
 
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'role' => $request->role,
-            'dni' => $request->dni,
-            'status' => 'Activo',
-            'password' => bcrypt('12345678'), // Contraseña temporal
-        ]);
+        return view('rrhh.specialty', compact('doctors', 'specialty'));
+    }
 
-        return redirect()->route('rrhh.index')->with('success', '¡Empleado registrado con éxito!');
+    // Vista 3: Informes detallados realizados por un Médico
+    public function doctorDetail($id)
+    {
+        $doctor = User::findOrFail($id);
+        
+        // Estudios o informes realizados por este médico
+        $studies = Study::where('doctor_id', $doctor->id)
+                        ->with('patient')
+                        ->latest()
+                        ->get();
+
+        return view('rrhh.doctor_detail', compact('doctor', 'studies'));
     }
 }

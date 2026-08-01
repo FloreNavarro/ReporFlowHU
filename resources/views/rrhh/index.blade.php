@@ -24,7 +24,7 @@
                         </a>
                     </li>
                     <li class="nav-item w-100 mb-2">
-                        <a href="{{ route('technician.index') }}" class="nav-link text-dark">
+                        <a href="{{ route('tecnico.index') }}" class="nav-link text-dark">
                             <i class="bi bi-upload"></i> Portal Técnico
                         </a>
                     </li>
