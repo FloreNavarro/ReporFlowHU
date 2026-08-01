@@ -10,3 +10,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [StudyController::class, 'index'])->name('studies.index');
 Route::put('/studies/{id}/report', [StudyController::class, 'processReport'])->name('studies.processReport');
+
+// Rutas del Técnico
+Route::prefix('tecnico')->name('technician.')->group(function () {
+    Route::get('/', [TecnicoController::class, 'index'])->name('index'); // <-- CAMBIAR AQUÍ
+    Route::post('/store', [TecnicoController::class, 'store'])->name('store'); // <-- CAMBIAR AQUÍ
+});
