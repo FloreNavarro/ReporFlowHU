@@ -24,6 +24,12 @@
                         </a>
                     </li>
                     <li class="nav-item w-100 mb-2">
+                        <!-- Enlace activo a esta misma vista -->
+                        <a href="{{ route('tecnico.index') }}" class="nav-link active bg-primary text-white fw-bold">
+                            <i class="bi bi-upload"></i> Portal Técnico
+                        </a>
+                    </li>
+                    <li class="nav-item w-100 mb-2">
                         <a href="#" class="nav-link text-dark">
                             <i class="bi bi-folder2-open"></i> Mis Informes
                         </a>
