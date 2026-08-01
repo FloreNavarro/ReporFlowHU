@@ -1,4 +1,6 @@
-/* Estilos generales */
+/* ==========================================
+   1. ESTILOS GENERALES Y BASE
+   ========================================== */
 body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,8 +19,155 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Modal personalizado */
+/* Modal personalizado por defecto */
 .modal-header-danger {
     background-color: #dc3545;
     color: #ffffff;
+}
+
+
+/* ==========================================
+   2. ESTILOS DEL MODAL SEGÚN FIGMA
+   ========================================== */
+
+/* Contenedor principal del modal en gris */
+.figma-modal-content {
+    background-color: #cfcfcf !important;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Recuadro del estudio (lado izquierdo) */
+.figma-study-box {
+    background-color: #d1b1b1;
+    border-radius: 4px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Recuadro blanco del informe borrador */
+.figma-report-box {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Botón cerrar personalizado en rojo */
+.btn-close-red {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    line-height: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-close-red:hover {
+    background-color: #c0392b;
+}
+
+/* Botonera de acciones (Rehacer, Cancelar, Guardar) */
+.btn-orange {
+    background-color: #e67e22;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-orange:hover {
+    background-color: #d35400;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #ff5252;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-cancel:hover {
+    background-color: #e03838;
+    color: white;
+}
+
+.btn-save-firm {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-save-firm:hover {
+    background-color: #219150;
+    color: white;
+}
+
+/* ==========================================
+   MODAL ESTILO MODERNO (AZUL & BLANCO)
+   ========================================== */
+
+.modal-content-clean {
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    overflow: hidden;
+}
+
+.modal-header-blue {
+    background-color: #0d6efd !important; /* Azul brillante */
+    color: #ffffff !important;
+    padding: 1rem 1.5rem;
+    border-bottom: none;
+}
+
+.card-info-light {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.btn-blue-action {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+}
+
+.btn-blue-action:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+.btn-gray-cancel {
+    background-color: #6c757d;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+}
+
+.btn-gray-cancel:hover {
+    background-color: #5c636a;
+    color: white;
+}
+
+.btn-orange-rehacer {
+    background-color: #fd7e14;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+}
+
+.btn-orange-rehacer:hover {
+    background-color: #e36a09;
+    color: white;
 }
