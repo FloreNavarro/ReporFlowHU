@@ -16,3 +16,11 @@ Route::prefix('tecnico')->name('tecnico.')->group(function () {
 Route::get('/', [TecnicoController::class, 'index'])->name('index');
 Route::post('/store', [TecnicoController::class, 'store'])->name('store'); 
 });
+
+use App\Http\Controllers\RrhhController;
+
+// Rutas de Recursos Humanos
+Route::prefix('rrhh')->name('rrhh.')->group(function () {
+    Route::get('/', [RrhhController::class, 'index'])->name('index');
+    Route::post('/store', [RrhhController::class, 'store'])->name('store');
+});
