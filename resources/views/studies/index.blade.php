@@ -20,15 +20,9 @@
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
                     <li class="nav-item w-100 mb-2">
                         <a href="#" class="nav-link active bg-warning text-dark fw-bold">
-                            <i class="bi bi-file-earmark-medical"></i> Solicitudes (Pendientes)
-                        </a>
+                            <i class="bi bi-file-earmark-medical"></i> Solicitudes (Pendientes)</a>
                     </li>
-                    <li class="nav-item w-100 mb-2">
-                        <!-- Enlace activo a esta misma vista -->
-                        <a href="{{ route('tecnico.index') }}" class="nav-link active bg-primary text-white fw-bold">
-                            <i class="bi bi-upload"></i> Portal Técnico
-                        </a>
-                    </li>
+
                     <li class="nav-item w-100 mb-2">
                         <a href="#" class="nav-link text-dark">
                             <i class="bi bi-folder2-open"></i> Mis Informes
@@ -44,6 +38,14 @@
                             <i class="bi bi-trash"></i> Papelera
                         </a>
                     </li>
+                     </a>
+                    
+                    <li class="nav-item w-100 mb-2">
+                        <!-- Enlace activo a esta misma vista -->
+                        <a href="{{ route('tecnico.index') }}" class="nav-link active bg-primary text-white fw-bold">
+                             Portal Técnico
+                        </a>
+                        </li>
                 </ul>
             </div>
         </div>
