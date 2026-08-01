@@ -28,6 +28,11 @@
                             <i class="bi bi-eye"></i> Vista Médico
                         </a>
                     </li>
+                    <li class="nav-item w-100 mb-2">
+                        <a href="{{ route('studies.index') }}" class="nav-link text-dark">
+                            <i class="bi bi-eye"></i> Vista Médico
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -108,7 +113,7 @@
                 <h5 class="modal-title fw-bold">Cargar Nuevo Estudio</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <!--<form action="{{ route('tecnico.store') }}" method="POST">-->
+            
                 <form action="javascript:void(0);">
                 @csrf
                 <div class="modal-body p-4">
