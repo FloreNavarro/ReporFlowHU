@@ -13,6 +13,6 @@ Route::put('/studies/{id}/report', [StudyController::class, 'processReport'])->n
 
 // Rutas del Técnico
 Route::prefix('tecnico')->name('technician.')->group(function () {
-Route::get('/', [TecnicoController::class, 'index'])->name('index'); // <-- CAMBIAR AQUÍ
-Route::post('/store', [TecnicoController::class, 'store'])->name('store'); // <-- CAMBIAR AQUÍ
+Route::get('/', [TecnicoController::class, 'index'])->name('index');
+Route::post('/store', [TecnicoController::class, 'store'])->name('store'); 
 });

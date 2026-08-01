@@ -108,7 +108,8 @@
                 <h5 class="modal-title fw-bold">Cargar Nuevo Estudio</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <form action="{{ route('tecnico.store') }}" method="POST">
+            <!--<form action="{{ route('tecnico.store') }}" method="POST">-->
+                <form action="javascript:void(0);">
                 @csrf
                 <div class="modal-body p-4">
                     <!-- Selección del Paciente -->
