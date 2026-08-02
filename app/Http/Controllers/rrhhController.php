@@ -20,10 +20,10 @@ class RrhhController extends Controller
     // Vista 2: Tabla de Médicos por Especialidad
     public function especialidad($specialty)
     {
-        $doctors = User::where('role', 'Médico')
-            ->where('especialidad', $specialty)
-            ->withCount('studies')
-            ->get();
+        $doctors = User::query()
+                       ->where('especialidad', $specialty)
+                       ->withCount('studies')
+                       ->get();
 
         return view('rrhh.especialidad', [
             'doctors' => $doctors,
@@ -36,10 +36,10 @@ class RrhhController extends Controller
     {
         $doctor = User::findOrFail($id);
 
-        $studies = Study::where('doctor_id', $doctor->id)
-            ->with('patient')
-            ->latest()
-            ->get();
+        $studies = Study::query()
+                        ->with('patient')
+                        ->latest()
+                        ->get();
 
         return view('rrhh.detalle_doctor', compact('doctor', 'studies'));
     }
