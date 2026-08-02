@@ -22,7 +22,7 @@ class RrhhController extends Controller
     // Vista 2: Tabla de Médicos por Especialidad seleccionada
     public function especialidad($specialty)
     {
-        $doctors = User::where('role','Médico')
+        $doctors = User::query()
                        ->where('especialidad', $specialty)
                        ->withCount('studies')
                        ->get();
@@ -35,7 +35,7 @@ class RrhhController extends Controller
     {
         $doctor = User::findOrFail($id);
 
-        $studies = Study::where('doctor_id', $doctor->id)
+        $studies = Study::query()
                         ->with('patient')
                         ->latest()
                         ->get();
