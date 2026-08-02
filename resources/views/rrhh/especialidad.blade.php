@@ -47,7 +47,7 @@
             <!-- Botón Volver y Título -->
             <div class="d-flex align-items-center gap-3 mb-3">
                 <a href="{{ route('rrhh.index') }}" class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-arrow-left"></i> Volver</a>
-                <h4 class="fw-bold text-uppercase text-secondary m-0">{{ $specialty }}</h4>
+                <h4 class="fw-bold text-uppercase text-secondary m-0">{{ $especialidad }}</h4>
             </div>
 
             <!-- Tabla de Médicos -->
