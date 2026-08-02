@@ -27,7 +27,7 @@ class RrhhController extends Controller
                        ->withCount('studies')
                        ->get();
 
-        return view('rrhh.especialidad', compact('doctors', 'specialty'));
+        return view('rrhh.especialidad', compact('doctors', 'especialidad'));
     }
 
     // Vista 3: Informes detallados realizados por un Médico
