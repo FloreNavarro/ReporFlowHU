@@ -32,7 +32,7 @@ body {
 
 /* Contenedor principal del modal en gris */
 .figma-modal-content {
-    background-color: #cfcfcf !important;
+    background-color: #003764;
     border-radius: 4px;
     border: none;
 }
@@ -118,7 +118,8 @@ body {
 }
 
 .modal-header-blue {
-    background-color: #0d6efd !important; /* Azul brillante */
+    background-color: #003764;
+    
     color: #ffffff !important;
     padding: 1rem 1.5rem;
     border-bottom: none;
@@ -140,7 +141,7 @@ body {
 }
 
 .btn-blue-action:hover {
-    background-color: #0b5ed7;
+    background-color: #003764;
     color: white;
 }
 
