@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rutas del Médico
 
-Route::get('/', [StudyController::class, 'index'])->name('studies.index');
+Route::get('/', [StudyController::class, 'index'])->name('doctor.index');
 Route::put('/studies/{id}/report', [StudyController::class, 'processReport'])->name('studies.processReport');
 
 // Rutas del Técnico
