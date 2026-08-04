@@ -11,7 +11,7 @@ class StudyController extends Controller
     {
         // Traer estudios pendientes
         $studies = Study::with('patient')->latest()->get();
-        return view('studies.index', compact('studies'));
+        return view('doctor.index', compact('studies'));
     }
 
     public function processReport(Request $request, $id)
