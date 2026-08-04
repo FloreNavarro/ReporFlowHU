@@ -36,9 +36,9 @@
               
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100">
                     <li class="nav-item w-100 mb-2">
-                        <a href="#" class="nav-link active bg-primary text-white fw-bold">
-                            <i class="bi bi-upload"></i> Cargar Estudio
-                        </a>
+                        <button class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#modalCargarEstudio">
+                    <i class="bi bi-upload"></i> Cargar Estudio
+                </button>
                     </li>
                     
                     <li class="nav-item w-100 mb-2">
@@ -74,9 +74,7 @@
             <!-- Encabezado y Botón de Carga -->
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h4 class="fw-bold text-secondary">Estudios Cargados Recientemente</h4>
-                <button class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#modalCargarEstudio">
-                    <i class="bi bi-plus-lg"></i> Cargar Nuevo Estudio
-                </button>
+                
             </div>
 
             <!-- Tabla de Estudios Subidos -->
