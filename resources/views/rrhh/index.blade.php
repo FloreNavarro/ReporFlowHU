@@ -10,13 +10,28 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body class="bg-light">
+    <!-- Navbar Superior -->
+<nav class="navbar navbar-expand-lg px-3 shadow-sm" style="background-color: #003764;">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center text-white gap-2" href="#">
+      <!-- Logo del Hospital -->
+      <img src="{{ asset('img/logoHU.png') }}" alt="Hospital Universitario" height="40" class="d-inline-block align-text-top">
+      
+      <!-- Nombre/Título -->
+      <span class="fw-bold fs-5 text-white">Hospital Universitario</span>
+    </a>
 
+    <!-- Opcional: Nombre del usuario / Botón de Perfil o Cerrar Sesión -->
+    <div class="d-flex text-white align-items-center">
+      <span class="me-3 small"><i class="bi bi-person-circle me-1"></i> Usuario</span>
+    </div>
+  </div>
+</nav>
 <div class="container-fluid">
     <div class="row flex-nowrap">
         <!-- Navegación Lateral (Sidebar) -->
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white border-end min-vh-100">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 text-dark">
-                <h3 class="fw-bold my-3 text-primary">Hospital<br><small class="text-secondary fs-6">Universitario</small></h3>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
                     <li class="nav-item w-100 mb-2">
                         <a href="{{ route('studies.index') }}" class="nav-link text-dark">
