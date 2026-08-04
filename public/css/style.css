@@ -1,3 +1,14 @@
+
+/* ==========================================
+   0. VARIABLES INSTITUCIONALES (HU)
+   ========================================== */
+:root {
+    --hu-azul-marino: #003764;
+    --hu-azul-claro: #0084C7;
+    --hu-fondo-gris: #f8f9fa;
+    --hu-rojo-peligro: #dc3545;
+}
+
 /* ==========================================
    1. ESTILOS GENERALES Y BASE
    ========================================== */
@@ -27,7 +38,7 @@ body {
 
 
 /* ==========================================
-   2. ESTILOS DEL MODAL SEGÚN FIGMA
+   2. ESTILOS DEL MODAL
    ========================================== */
 
 /* Contenedor principal del modal en gris */
